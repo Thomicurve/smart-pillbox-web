@@ -11,8 +11,9 @@ const textHomeOptions = {
     easing: 'ease',
     origin: 'left',
     opacity: 0,
-    distance: '500px'
+    distance: '500px',
+    delay: 400
 }
 
-ScrollReveal().reveal('.home__image', homeImageOptions);
-ScrollReveal().reveal('.home-title__left', textHomeOptions);
+ScrollReveal().reveal('.title-right__image', homeImageOptions);
+ScrollReveal().reveal('.home-title__title-left', textHomeOptions);
