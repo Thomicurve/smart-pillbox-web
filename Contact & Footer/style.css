@@ -1,0 +1,16 @@
+:root{
+    --blue-1: #2B34D9;
+    --blue-2: #6B71F2;
+    --blue-3: #0D17D9;
+}
+
+.fw-bold{
+    color: var(--blue-1)!important;
+}
+.bi{
+    color: var(--blue-2)
+}
+.formulario{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
