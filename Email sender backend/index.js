@@ -1,9 +1,9 @@
 import { SMTPClient } from 'emailjs';
 
 const client = new SMTPClient({
-	user: 'support@alanescarcha.com',
-	password: '_.3Hn-jxC6^u',
-	host: 'premium190.web-hosting.com',
+	user: 'xxxxxx',
+	password: 'xxxxxxx',
+	host: 'xxxxxxx',
 	ssl: true,
 });
 
