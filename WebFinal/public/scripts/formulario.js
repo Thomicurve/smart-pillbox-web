@@ -28,7 +28,14 @@ async function main() {
         from: '"SmartPillbox 😎" <contacto@smartpillbox.ml>', // sender address
         to: "contacto@smartpillbox.ml", // list of receivers
         subject: asunto, // Subject line
-        text: textarea, // plain text body
+        text: `
+        - Nombre: ${nombre}
+        - Correo: ${correo}
+        
+        Mensaje:
+        ${textarea}
+
+        `, // plain text body
     });
 
     console.log("Message sent: %s", info.messageId);
