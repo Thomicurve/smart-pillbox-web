@@ -87,25 +87,27 @@
   <footer class="text-center text-lg-start bg-light">
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
       <div class="container text-center text-md-start mt-5 formulario">
+        <form action="javascript:sendForm();" method="post">
         <h1>Contacto</h1>
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
           <label for="nombre">Nombre</label>
         </div>
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="correo" placeholder="name@example.com">
+          <input type="email" class="form-control" id="correo" placeholder="name@example.com" required>
           <label for="correo">Email</label>
         </div>
         <div class="form-floating mb-3">
-          <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+          <input type="text" class="form-control" id="asunto" placeholder="Asunto" required>
           <label for="asunto">Asunto</label>
         </div>
         <div class="form-floating mb-3">
           <textarea class="form-control" placeholder="Deja un comentario aqui" id="textarea"
-            style="height: 100px; min-height: 100px;"></textarea>
+            style="height: 100px; min-height: 100px;" required></textarea>
           <label for="textarea">Mensaje</label>
         </div>
-        <button type="submit" id="btnEnviar" class="btn btn-primary">Enviar</button>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </section>
 
     <section>
