@@ -1,0 +1,64 @@
+:root {
+    --blue-1: #2B34D9;
+    --blue-2: #6B71F2;
+    --blue-3: #0D17D9;
+    --white: #ffff; 
+    --yellow: #FBFF47;
+}
+
+.members__cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.members__card-members {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-members__rols {
+    color: var(--yellow);
+    font-size: 14px;
+}
+
+.card-members__names {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.card-members__footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 10px;
+    background: var(--blue-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .team-container {
+    background: var(--blue-1);
+    padding: 40px 0;
+}
+
+.members__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.members__card-members {
+    width: 250px;
+    margin: 20px 5px;
+}
+
+.card-members__image {
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+} */

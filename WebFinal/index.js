@@ -46,10 +46,11 @@ app.get('/sendMail/:nombre/:correo/:asunto/:textarea', async (req, res) => {
     const correo = req.params.correo;
     const asunto = req.params.asunto;
     const textarea = req.params.textarea;
-    try{
+
+    try {
         await enviarCorreo(nombre, correo, asunto, textarea);
         res.send('Correo enviado con exito!');
-    } catch (error){
+    } catch (error) {
         console.error(error);
     }
 });
