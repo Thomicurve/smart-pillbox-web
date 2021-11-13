@@ -21,14 +21,7 @@ app.post('/sendform',(req, res) => {
         res.status(404).send('Todos los campos son obligatorios');
         console.error('Error al enviar correo, los campos son obligatorios');
     }else{
-        axios.post('https://sendmailer-smtp.herokuapp.com/api/v1', {
-            //SMTP config
-            host: 'premium190.web-hosting.com', //SMTP Host server
-            port: '465', //SMPT Port server
-            secure: 'ssl', // SSL, TLS or none (No capital letters)
-            user: 'support@alanescarcha.com', //SMTP User
-            password: '@12212003', //SMTP Password
-    
+        axios.post('https://sendmailer-smtp.herokuapp.com/api/v1/private', {
             //Email config
             name: 'Smart Pillbox', //from email Name
             from: 'support@alanescarcha.com', //email from address
