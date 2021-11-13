@@ -1,0 +1,31 @@
+:root {
+    --blue-1: #2B34D9;
+    --blue-2: #6B71F2;
+    --blue-3: #0D17D9;
+    --white: #ffff; 
+}
+
+.team-container {
+    background: var(--blue-1);
+    padding: 40px 0;
+}
+
+.members__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.members__card-members {
+    width: 250px;
+    margin: 20px 5px;
+}
+
+.card-members__image {
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+}
